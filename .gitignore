@@ -1,0 +1,12 @@
+node_modules
+build
+.svelte-kit
+.env
+.env.local
+bcms-content.json
+
+# A timestamped backup (.env.bak.<ts>) slipped past a bare `.env` rule once and committed a
+# live GitHub token. Ignore every variant; keep the checked-in example.
+.env
+.env.*
+!.env.example

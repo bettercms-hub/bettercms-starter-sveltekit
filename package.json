@@ -1,0 +1,32 @@
+{
+  "name": "bettercms-starter-sveltekit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BetterCMS Marketing Starter (SvelteKit) — Home, About, Contact (with form), Blog, and Case Studies, rendered from a BetterCMS project and prerendered to static HTML.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "build:bcms": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "fetch-content": "node scripts/fetch-content.mjs"
+  },
+  "dependencies": {
+    "@bettercms-ai/sdk": "^1.40.0",
+    "@bettercms-ai/sveltekit": "^0.3.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.20.1",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  }
+}
